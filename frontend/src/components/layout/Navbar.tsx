@@ -32,7 +32,7 @@ export function Navbar() {
 
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 font-bold text-lg text-brand-600 shrink-0">
-          <span className="text-2xl">🌊</span>
+          <span className="text-2xl">😮‍💨</span>
           <span className="hidden sm:block">Trauma Dump</span>
         </Link>
 

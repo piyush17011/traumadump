@@ -138,7 +138,7 @@ export default function HomePage() {
       <footer className="bg-white border-t border-slate-100 py-10 px-4">
         <div className="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-slate-400">
           <div className="flex items-center gap-2 font-semibold text-slate-700">
-            <span className="text-xl">🌊</span> Trauma Dump
+            <span className="text-xl">😮‍💨</span> Trauma Dump
           </div>
           <div className="flex items-center gap-6">
             <Link href="/feed" className="hover:text-slate-700 transition-colors">Feed</Link>

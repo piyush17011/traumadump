@@ -112,8 +112,12 @@ export const googleLogin = async (req: Request, res: Response, next: NextFunctio
     }
 
     sendToken(user, 200, res);
-  } catch (err) {
-    next(err);
+  } catch (err: any) {
+    console.error('Google login failed:', err);
+    const message = err?.message?.includes('Wrong recipient')
+      ? 'Google token audience mismatch. Make sure the frontend and backend Google client IDs match.'
+      : err?.message || 'Google login failed';
+    next(createError(message, 401));
   }
 };
 
